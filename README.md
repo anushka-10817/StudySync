@@ -1,19 +1,30 @@
 # StudySync
 StudySync is a Java-based command-line study planner that helps students manage academic tasks, deadlines, priorities and completion status. It uses ArrayList and Java serialization for task management and persistent local data storage.
 # Objective
-* To develop a simple Java-based task management system for students.
-* To help students organize academic tasks by subject, deadline, and priority.
-* To allow users to track completed and pending tasks.
-* To demonstrate basic Java programming and Object-Oriented Programming concepts.
-* To provide persistent task storage using file handling.
+*  Build a simple and easy to use study planner for students.
+* Record tasks, subjects, deadlines and priorities in one place.
+* Allow students to mark tasks as completed as they finish them.
+* Show overall study progress at a glance.
+* Work without a database, internet connection or external libraries.
+* Apply core Java concepts such as:
+Classes and Objects
+ArrayList / Collections
+Control Flow
+Exception Handling
+File I/O and Serialization
+* Create a project that solves a practical day to day student problem rather than being just a textbook exercise.
 # Features
-* Add new academic tasks.
-* View all saved tasks.
-* Mark tasks as completed.
-* Delete tasks.
-* View overall study progress.
-* Store task data permanently using tasks.dat.
-* Handle invalid user inputs using exception handling.
+* Add Task- Add subject, task name, deadline and priority.
+* Show Tasks- View all tasks with Pending/Completed status.
+* Complete Task- Mark a selected task as completed.
+* Delete Task- Remove a selected task.
+* Show Progress- View total, completed, pending tasks and progress %.
+* Exit-	Save data and exit the application.
+# Supporting Features
+* Autosave: Saves changes after adding, completing or deleting tasks.
+* Autoload: Restores saved tasks when the program starts.
+* Input Handling: Handles invalid menu choices and task numbers.
+* Menu driven: Runs continuously until the user selects Exit.
 # Tools & Technologies Used
 * Programming Language: Java
 * IDE: Visual Studio Code
@@ -33,6 +44,7 @@ javac StudySync.java
 * Run the application:
 java StudySync
 * Use the numbered menu to access different features.
+
 # Testing Instructions
 * Run the application using java StudySync.
 * Select 1 – Add Task and enter subject, task name, deadline, and priority.
@@ -42,6 +54,10 @@ java StudySync
 * Select 4 – Delete Task to test task deletion.
 * Select 6 – Exit and restart the application to verify that previously saved tasks are retained.
 * Enter invalid menu values or task numbers to test the application's error handling.
+# Project Structure
+* StudySync.java
+* tasks.dat
+* README.md
 # Screenshots of Output
 <img width="926" height="512" alt="Screenshot 2026-09-17 184728" src="https://github.com/user-attachments/assets/7c454821-3c06-4f22-9b01-2c3b45192729" />
 <img width="712" height="527" alt="Screenshot 2026-09-17 184744" src="https://github.com/user-attachments/assets/5fda82a5-00a5-4bb3-9e49-1c2ac3b8b786" />
@@ -75,3 +91,5 @@ java StudySync
 * Replace file storage with a database.
 * Add subject-wise progress tracking.
 * Develop web or mobile versions of the application.
+# Conclusion
+StudySync provides a simple way for students to manage academic tasks through a command line interface. The project demonstrates important Java concepts such as classes and objects, ArrayList, methods, exception handling, file handling and object serialisation, while providing persistent local task storage.
